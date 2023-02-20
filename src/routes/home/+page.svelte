@@ -1,6 +1,17 @@
+<script>
+	import { Icon } from '@steeze-ui/svelte-icon'
+	import { Search } from '@steeze-ui/material-design-icons'
+</script>
+
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-10 text-center">
-		<h2 class="font-bold">Welcome to Skeleton.</h2>
+		<h2 class="font-bold">Home Page</h2>
+		<button class="btn variant-filled-primary">Call API</button>
+		<div class="input-group input-group-divider grid-cols-[auto_1fr_auto]">
+			<div class="input-group-shim"><Icon src="{Search}" theme="solid" class="color-gray-900" style="height: 2rem; width: 2rem" /></div>
+			<input type="search" placeholder="Search..." />
+			<button class="variant-filled-secondary">Submit</button>
+		</div>
 		<!-- Animated Logo -->
 		<figure>
 			<section class="img-bg" />
@@ -16,21 +27,6 @@
 			</svg>
 		</figure>
 		<!-- / -->
-		<div class="flex justify-center space-x-2">
-			<a
-				class="btn btn-filled"
-				href="https://skeleton.dev/"
-				target="_blank"
-				rel="noreferrer"
-			>
-				Launch Documentation
-			</a>
-		</div>
-		<div class="space-y-2">
-			<p>Try editing the following:</p>
-			<p><code>/src/routes/+layout.svelte</code></p>
-			<p><code>/src/routes/+page.svelte</code></p>
-		</div>
 	</div>
 </div>
 
